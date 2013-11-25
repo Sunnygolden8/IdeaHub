@@ -12,9 +12,10 @@
 		<%end%>
 	</p>
 	<p>
-		<h1>WELCOME</h1>
+		<h1><%= current_user.first_name + ' '+current_user.last_name%></h1>
+		<h3>Reputation: <%= current_user.reputation%></h3>
 		<table class="table">
-			<tr><th>Your Projects</th><th>Recent Projects</th></tr>
-			<tr><td>Current Projects</td><td>Last 5 Projects</td></tr>
+			<tr><th>Current Projetcs</th><th>Completed Projects</th></tr>
+			<tr><td>List of current projects</td><td>List of past projects</td></tr>
 		</table>
 	</div>
