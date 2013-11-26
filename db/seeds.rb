@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+<<<<<<< HEAD
 #---
 # Excerpted from "Agile Web Development with Rails",
 # published by The Pragmatic Bookshelf.
@@ -48,3 +49,5 @@ Product.create(:title => 'Love Sweets?',
   :image => '/images/Cake.png',
   :price => 43.75)
 
+=======
+>>>>>>> 8fbb2693a719143f28fad54a9febf1c15839e133

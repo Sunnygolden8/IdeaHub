@@ -3,4 +3,8 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+<<<<<<< HEAD
 Store::Application.load_tasks
+=======
+IdeaHub::Application.load_tasks
+>>>>>>> 8fbb2693a719143f28fad54a9febf1c15839e133

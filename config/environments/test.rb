@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Store::Application.configure do
+=======
+IdeaHub::Application.configure do
+>>>>>>> 8fbb2693a719143f28fad54a9febf1c15839e133
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's

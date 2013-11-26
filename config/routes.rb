@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Store::Application.routes.draw do
   resources :line_items
 
@@ -8,6 +9,14 @@ Store::Application.routes.draw do
   
   root :to => 'store#index' , :as => 'store'
 
+=======
+IdeaHub::Application.routes.draw do
+  root "welcome#index"
+  devise_for :users
+  
+  resources :users
+  
+>>>>>>> 8fbb2693a719143f28fad54a9febf1c15839e133
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -48,7 +57,11 @@ Store::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 8fbb2693a719143f28fad54a9febf1c15839e133
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
