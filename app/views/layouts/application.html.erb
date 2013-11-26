@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <body id="store" >
+  <div id="banner" >
+  <%= image_tag("Orange.png") %>
+  <%= @page_title || "Avatar Store" %>
+  </div>
+  <div id="columns" >
+  <div id="side" >
+  <%= link_to 'Store', products_path %><br />
+  </div>
+  <div id="main" >
+  <%= yield %>
+  </div>
+ </div>
+</body>
+</html>
