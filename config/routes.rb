@@ -1,4 +1,5 @@
 Store::Application.routes.draw do
+  devise_for :users
   resources :line_items
 
   resources :carts
@@ -6,8 +7,8 @@ Store::Application.routes.draw do
   get "store/index"
   resources :products
   
-  root :to => 'store#index' , :as => 'store'
-
+  #root :to => 'store#index' , :as => 'store'
+  root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
