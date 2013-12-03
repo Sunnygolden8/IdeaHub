@@ -7,6 +7,8 @@ Store::Application.routes.draw do
   get "store/index"
   resources :products
   
+  resources :comments
+  
   #root :to => 'store#index' , :as => 'store'
   root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.
