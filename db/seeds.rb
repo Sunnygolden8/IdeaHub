@@ -23,20 +23,20 @@
 #---
 # encoding: utf-8
 Product.delete_all
-Product.create(:title => 'Buy It',
+Product.create(:title => 'Buy Those Avatars!',
   :description => 
     %{<p>
-        <em>Avatars</em> 
+        <em>Apple</em> 
       </p>},
-  :image =>   '/images/Apple.png',    
+  :image =>   'Apple.png',    
   :price => 42.95)
 # . . .
-Product.create(:title => 'Avatar',
+Product.create(:title => 'Rice',
   :description =>
     %{<p>
         Love rice!
       </p>},
-  :image => '/images/Rice.png',
+  :image => 'Rice.png',
   :price => 49.50)
 # . . .
 
@@ -45,6 +45,6 @@ Product.create(:title => 'Love Sweets?',
     %{<p>
         <em>Get This One</em> 
       </p>},
-  :image => '/images/Cake.png',
+  :image => 'Cake.png',
   :price => 43.75)
 
