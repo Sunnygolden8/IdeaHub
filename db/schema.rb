@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131201175243) do
+ActiveRecord::Schema.define(version: 20131204195121) do
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -45,6 +45,17 @@ ActiveRecord::Schema.define(version: 20131201175243) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "ratings", force: true do |t|
+    t.integer  "project_id"
+    t.integer  "user_id"
+    t.integer  "rating_score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ratings", ["project_id"], name: "index_ratings_on_project_id"
+  add_index "ratings", ["user_id"], name: "index_ratings_on_user_id"
 
   create_table "rewards", force: true do |t|
     t.datetime "created_at"
