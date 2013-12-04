@@ -7,7 +7,7 @@ Store::Application.routes.draw do
   get "store/index"
   resources :products
   
-  resources :comments
+  resources :users 
   
   #root :to => 'store#index' , :as => 'store'
   root 'users#index'

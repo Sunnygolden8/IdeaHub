@@ -10,7 +10,7 @@
   <body id="store" >
   <div id="banner" >
   <%= image_tag("Orange.png") %>
-  <%= @page_title || "Avatar Store" %>
+  <%= @page_title || "Idea Hub" %>
   </div>
   <div id="columns" >
   <div id="side" >
@@ -21,7 +21,7 @@
         <% end %>
       <% end %>
     </div>
-  <%= link_to 'New User', new_user_registration_path %><br />
+  <%= link_to 'New User', new_user_path %><br />
   <%= link_to( 'Sign in', new_user_session_path ) %><br />
   <%= link_to 'Store', products_path %><br />
   </div>

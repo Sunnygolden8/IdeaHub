@@ -19,9 +19,6 @@ class AddDeviseToUsers < ActiveRecord::Migration
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
 
-      ## Encryptable
-      # t.string :password_salt, :type => String
-      
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
@@ -32,12 +29,7 @@ class AddDeviseToUsers < ActiveRecord::Migration
       # t.integer  :failed_attempts, :default => 0, :null => false # Only if lock strategy is :failed_attempts
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
-      
-      # Token authenticatable
-      # field :authentication_token, :type => String
 
-      ## Invitable
-      # field :invitation_token, :type => String
 
       # Uncomment below if timestamps were not included in your original model.
       # t.timestamps
