@@ -10,7 +10,7 @@ Store::Application.routes.draw do
   resources :users 
   
   #root :to => 'store#index' , :as => 'store'
-  root 'users#index'
+  root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
