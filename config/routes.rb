@@ -1,11 +1,13 @@
 Store::Application.routes.draw do
   devise_for :users
   resources :line_items
-
+  resources :store
   resources :carts
 
   get "store/index"
   resources :products
+  
+  resources :users 
   
   #root :to => 'store#index' , :as => 'store'
   root 'users#index'
