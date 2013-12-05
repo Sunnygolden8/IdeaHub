@@ -1,4 +1,5 @@
 Store::Application.routes.draw do
+  get "rating/update"
   devise_for :users
   resources :line_items
   resources :store
@@ -7,7 +8,12 @@ Store::Application.routes.draw do
   get "store/index"
   resources :products
   
+<<<<<<< HEAD
   resources :users 
+=======
+  resources :comments
+  resources :ratings, only: :update
+>>>>>>> ea2e1bb8c2717a5a5d9d1f23ad2ec7ea21560b2e
   
   #root :to => 'store#index' , :as => 'store'
   root 'users#index'

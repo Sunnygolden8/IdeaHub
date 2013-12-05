@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20131204202029) do
+=======
+ActiveRecord::Schema.define(version: 20131204195121) do
+>>>>>>> ea2e1bb8c2717a5a5d9d1f23ad2ec7ea21560b2e
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -35,6 +39,25 @@ ActiveRecord::Schema.define(version: 20131204202029) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+=======
+  create_table "ratings", force: true do |t|
+    t.integer  "project_id"
+    t.integer  "user_id"
+    t.integer  "rating_score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ratings", ["project_id"], name: "index_ratings_on_project_id"
+  add_index "ratings", ["user_id"], name: "index_ratings_on_user_id"
+
+  create_table "rewards", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+>>>>>>> ea2e1bb8c2717a5a5d9d1f23ad2ec7ea21560b2e
   create_table "users", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
