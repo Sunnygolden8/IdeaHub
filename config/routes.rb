@@ -1,8 +1,12 @@
 Store::Application.routes.draw do
 <<<<<<< HEAD
+<<<<<<< HEAD
   get "rating/update"
 =======
 >>>>>>> 2b82886ffcab7efaddea81b2a55bbd283f5ae00c
+=======
+  get "rating/update"
+>>>>>>> upstream/master
   devise_for :users
   resources :line_items
   resources :store
@@ -13,6 +17,9 @@ Store::Application.routes.draw do
   
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
   resources :users 
 =======
   resources :comments
