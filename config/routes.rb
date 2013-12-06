@@ -8,6 +8,7 @@ Store::Application.routes.draw do
   resources :products
   
   resources :users 
+  resources :projects
   
   #root :to => 'store#index' , :as => 'store'
   root 'welcome#index'

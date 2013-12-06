@@ -23,8 +23,14 @@
       <% end %>
     </div>
 	<%= link_to( 'Home',root_path, class:"btn btn-default btn-xs")%><br>
-  <%= link_to( 'Sign in', new_user_session_path ) %><br />
-  <%= link_to 'Store', products_path %><br />
+	<p> <% if user_signed_in?%>
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete, class:"btn btn-default btn-xs"%><br>
+		<% else%>
+			<%= link_to('Sign In', new_user_session_path, class:"btn btn-default btn-xs")%> <br>
+		<%end%>
+  <%= link_to 'Members List', users_path, class:"btn btn-default btn-xs" %><br />
+  <%= link_to 'Projects', projects_path, class:"btn btn-default btn-xs" %><br />
+  <%= link_to 'Store', products_path, class:"btn btn-default btn-xs" %><br />
   </div>
   <div id="main" >
   <%= yield %>
