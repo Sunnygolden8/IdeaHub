@@ -4,6 +4,10 @@
   <title>Store</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag :defaults %>
+<<<<<<< HEAD
+=======
+  <%= javascript_include_tag "application" %>
+>>>>>>> 2b82886ffcab7efaddea81b2a55bbd283f5ae00c
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -21,9 +25,21 @@
         <% end %>
       <% end %>
     </div>
+<<<<<<< HEAD
   <%= link_to 'New User', new_user_path %><br />
   <%= link_to( 'Sign in', new_user_session_path ) %><br />
   <%= link_to 'Store', products_path %><br />
+=======
+	<%= link_to( 'Home',root_path, class:"btn btn-default btn-xs")%><br>
+	<p> <% if user_signed_in?%>
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete, class:"btn btn-default btn-xs"%><br>
+		<% else%>
+			<%= link_to('Sign In', new_user_session_path, class:"btn btn-default btn-xs")%> <br>
+		<%end%>
+  <%= link_to 'Members List', users_path, class:"btn btn-default btn-xs" %><br />
+  <%= link_to 'Projects', projects_path, class:"btn btn-default btn-xs" %><br />
+  <%= link_to 'Store', products_path, class:"btn btn-default btn-xs" %><br />
+>>>>>>> 2b82886ffcab7efaddea81b2a55bbd283f5ae00c
   </div>
   <div id="main" >
   <%= yield %>
@@ -31,4 +47,8 @@
  </div>
   </body>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 2b82886ffcab7efaddea81b2a55bbd283f5ae00c

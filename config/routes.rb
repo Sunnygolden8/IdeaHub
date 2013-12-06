@@ -1,5 +1,8 @@
 Store::Application.routes.draw do
+<<<<<<< HEAD
   get "rating/update"
+=======
+>>>>>>> 2b82886ffcab7efaddea81b2a55bbd283f5ae00c
   devise_for :users
   resources :line_items
   resources :store
@@ -9,6 +12,7 @@ Store::Application.routes.draw do
   resources :products
   
 <<<<<<< HEAD
+<<<<<<< HEAD
   resources :users 
 =======
   resources :comments
@@ -17,6 +21,13 @@ Store::Application.routes.draw do
   
   #root :to => 'store#index' , :as => 'store'
   root 'users#index'
+=======
+  resources :users 
+  resources :projects
+  
+  #root :to => 'store#index' , :as => 'store'
+  root 'welcome#index'
+>>>>>>> 2b82886ffcab7efaddea81b2a55bbd283f5ae00c
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
