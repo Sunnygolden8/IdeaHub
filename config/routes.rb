@@ -16,7 +16,7 @@ Store::Application.routes.draw do
   resources :ratings, only: :update
   
   #root :to => 'store#index' , :as => 'store'
-  root 'users#index'
+  #root 'users#index'
 
   resources :projects
   
