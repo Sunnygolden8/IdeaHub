@@ -1,5 +1,13 @@
 Store::Application.routes.draw do
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  resources :orders
+
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
   get "rating/update"
 
   devise_for :users
@@ -8,8 +16,13 @@ Store::Application.routes.draw do
   resources :carts
 
   get "store/index"
+<<<<<<< HEAD
   resources :products
 
+<<<<<<< HEAD
+  resources :users 
+
+=======
   resources :users 
 
   
@@ -22,6 +35,31 @@ Store::Application.routes.draw do
   #root :to => 'store#index' , :as => 'store'
   #root 'users#index'
 
+=======
+  resources :products do
+    get :who_bought, :on => :member
+  end
+
+  resources :users 
+  resources :point_rules
+  resources :comments
+  resources :ratings, only: :update
+>>>>>>> clam4-master
+  
+  resources :ratings, only: :update
+  resources :projects do
+     resources :comments
+     resources :project_roles
+   end
+
+  #root :to => 'store#index' , :as => 'store'
+  #root 'users#index'
+
+<<<<<<< HEAD
+=======
+  resources :projects
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
   
   #root :to => 'store#index' , :as => 'store'
   root 'welcome#index'

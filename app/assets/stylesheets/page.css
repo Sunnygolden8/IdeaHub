@@ -1,4 +1,8 @@
 #banner {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> clam4-master
 	float:top;
 background: #333333;
 padding-top: 10px;
@@ -11,6 +15,7 @@ text-align: center;
 #banner img {
 float: top;
 width:40px;
+<<<<<<< HEAD
 }
 #columns {
 }
@@ -18,16 +23,68 @@ width:40px;
 margin-left: 180px;
 padding-top: 4ex;
 padding-left: 2em;
+=======
+}
+#columns {
+}
+#main {
+margin-left: 180px;
+padding-top: 4ex;
+padding-left: 2em;
+=======
+background: #FF3300;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 4px solid;
+font: small-caps 40px/40px "Times New Roman" , serif, bold;
+color: ##FF6600;
+text-align: center;
+}
+#banner img {
+float: left;
+}
+#columns {
+background: #FF6600;
+}
+#main {
+margin-left: 19em;
+padding-top: 4ex;
+padding-left: 2em;
+background: white;
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
 }
 #side {
 float: left;
 padding-top: 1em;
+<<<<<<< HEAD
 padding-left: 2em;
 padding-bottom: 1em;
 width: 150px;
 bottom:0px;
 }
 
+=======
+<<<<<<< HEAD
+padding-left: 2em;
+padding-bottom: 1em;
+width: 150px;
+bottom:0px;
+}
+
+=======
+padding-left: 1em;
+padding-bottom: 1em;
+width: 6em;
+height: 100%;
+background: #FF6600;
+}
+#side a {
+color: #FF6600;
+font-size: small;
+}
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
 #store .entry form, #store .entry form div {
 display: inline;
 }
@@ -43,11 +100,45 @@ border-top: 1px solid #595;
 }
 /* Styles for the cart in the sidebar */
 #cart, #cart table {
+<<<<<<< HEAD
 font-size: smaller;
 color: white;
+=======
+font-size: medium;
+color: black;
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 }
 #cart table {
 border-top: 1px dotted #595;
 border-bottom: 1px dotted #595;
 margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+}
+.depot_form fieldset {
+background: #efe;
+}
+.depot_form legend {
+color: #dfd;
+background: #141;
+font-family: sans-serif;
+padding: 0.2em 1em;
+}
+.depot_form label {
+width: 5em;
+float: left;
+text-align: right;
+padding-top: 0.2em;
+margin-right: 0.1em;
+display: block;
+}
+.depot_form select, .depot_form textarea, .depot_form input {
+margin-left: 0.5em;
+}
+.depot_form .submit {
+margin-left: 4em;
+}
+.depot_form div {
+margin: 0.5em 0;
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 }

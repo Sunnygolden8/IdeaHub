@@ -11,7 +11,11 @@ class CartsController < ApplicationController
   # GET /carts/1.json
   def show
     begin
+<<<<<<< HEAD
     @cart = Cart.find(params[:id])
+=======
+    @cart = Cart.find( params[:id] )
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
     rescue ActiveRecord::RecordNotFound
     logger.error "Attempt to access invalid cart #{params[:id]}"
     redirect_to store_url, :notice => 'Invalid cart'

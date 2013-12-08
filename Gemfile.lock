@@ -25,11 +25,22 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+<<<<<<< HEAD
+=======
+    ambry (0.3.1)
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
     bcrypt-ruby (3.1.2-x86-mingw32)
     builder (3.1.4)
+<<<<<<< HEAD
+=======
+    carrierwave (0.9.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -57,6 +68,11 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+<<<<<<< HEAD
+=======
+    merit (1.6.2)
+      ambry (~> 0.3.0)
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.2)
@@ -117,14 +133,28 @@ GEM
       rack (>= 1.0)
 
 PLATFORMS
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> clam4-master
   ruby
   x86-mingw32
 
 DEPENDENCIES
+=======
+  x86-mingw32
+
+DEPENDENCIES
+  carrierwave
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 1.2)
   jquery-rails
+<<<<<<< HEAD
+=======
+  merit
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)
   sdoc

@@ -60,6 +60,17 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+<<<<<<< HEAD
+=======
+  
+  def who_bought
+    @product = Product.find(params[:id])
+    respond_to do |format|
+      format.atom
+      format.xml { render :xml => @product }
+    end
+  end
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 
   private
     # Use callbacks to share common setup or constraints between actions.
