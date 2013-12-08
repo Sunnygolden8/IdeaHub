@@ -1,5 +1,6 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+<<<<<<< HEAD
 #
 # Examples:
 #
@@ -22,6 +23,9 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 # encoding: utf-8
+=======
+
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 Product.delete_all
 Product.create(:title => 'Buy Those Avatars!',
   :description => 

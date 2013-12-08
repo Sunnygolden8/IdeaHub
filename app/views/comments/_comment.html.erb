@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 	<p><%= comment.text %></p>
 	<small><cite><%= comment.user.first_name %> <%= comment.user.last_name %></cite></small>
@@ -6,3 +7,14 @@
                  method: :delete,
                  data: { confirm: 'Are you sure?' }, class:"btn btn-default btn-xs" %>
     <% end %>
+=======
+<blockquote>
+	<p><%= comment.body %></p>
+	<small><cite><%= comment.user.name %></cite></small>
+	<% if user_signed_in? and current_user.id == comment.user.id %>
+	<%= link_to content_tag( :span, nil, class: 'glyphicon glyphicon-trash' ), [comment.project, comment],
+	               method: :delete,
+	               data: { confirm: 'Are you sure?' }, remote: true %>
+    <% end %>
+</blockquote>
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
