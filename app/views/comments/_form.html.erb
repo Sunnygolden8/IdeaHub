@@ -1,0 +1,26 @@
+<%= form_for( [@project, @project.comments.build], html: { role: 'form' }, remote: true ) do |f| %>
+
+<<<<<<< HEAD
+	<div class="input-group">
+    	<%= f.text_area :text, class: 'form-control' %>
+	</div>
+	<div class="input-group">
+    	<%= f.submit class: 'btn-default btn-xs' %>
+=======
+<<<<<<< HEAD
+	<div class="input-group">
+    	<%= f.text_area :text, class: 'form-control' %>
+	</div>
+	<div class="input-group">
+    	<%= f.submit class: 'btn-default btn-xs' %>
+=======
+	<div class="form-group">
+    	<%= f.text_area :body, class: 'form-control' %>
+	</div>
+	<div class="form-group">
+    	<%= f.submit class: 'btn' %>
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
+	</div>
+	
+<% end %>
