@@ -28,4 +28,8 @@ class User < ActiveRecord::Base
     self.save
   end
   
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> upstream/master

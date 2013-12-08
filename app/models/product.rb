@@ -23,4 +23,7 @@ class Product < ActiveRecord::Base
   validates :image, :uniqueness => true
   
 end
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
