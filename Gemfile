@@ -28,7 +28,15 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
+<<<<<<< HEAD
  
+=======
+
+gem 'carrierwave'
+
+gem 'merit'
+
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

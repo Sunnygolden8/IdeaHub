@@ -1,5 +1,10 @@
 Store::Application.routes.draw do
 
+<<<<<<< HEAD
+=======
+  resources :orders
+
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
   get "rating/update"
 
   devise_for :users
@@ -8,6 +13,7 @@ Store::Application.routes.draw do
   resources :carts
 
   get "store/index"
+<<<<<<< HEAD
   resources :products
 
   resources :users 
@@ -22,6 +28,21 @@ Store::Application.routes.draw do
   #root :to => 'store#index' , :as => 'store'
   #root 'users#index'
 
+=======
+  resources :products do
+    get :who_bought, :on => :member
+  end
+
+  resources :users 
+  resources :point_rules
+  resources :comments
+  resources :ratings, only: :update
+  
+  #root :to => 'store#index' , :as => 'store'
+  #root 'users#index'
+
+  resources :projects
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
   
   #root :to => 'store#index' , :as => 'store'
   root 'welcome#index'

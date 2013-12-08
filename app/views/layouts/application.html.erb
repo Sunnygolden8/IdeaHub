@@ -3,10 +3,14 @@
 <head>
   <title>Store</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+<<<<<<< HEAD
   <%= stylesheet_link_tag    "bootstrap", media: "all", "data-turbolinks-track" => true %>
 
   <%= javascript_include_tag :defaults %>
     <%= javascript_include_tag "application" %>
+=======
+  <%= javascript_include_tag :defaults %>
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 
   <%= csrf_meta_tags %>
 </head>
@@ -18,6 +22,7 @@
   </div>
   <div id="columns" >
   <div id="side" >
+<<<<<<< HEAD
     <div id="cart" >
       <% if @cart %>
         <%= hidden_div_if(@cart.line_items.empty?, :id => "cart" ) do %>
@@ -45,6 +50,23 @@
 
   			<%= link_to('Sign In', new_user_session_path, class:"btn btn-default btn-xs")%>
   		<%end%>
+=======
+
+  <%= link_to 'New User', new_user_path, class:"btn btn-default btn-xs" %><br />
+
+	<%= link_to( 'Home',root_path, class:"btn btn-default btn-xs")%><br>
+	<p> <% if user_signed_in?%>
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete, class:"btn btn-default btn-xs"%><br>
+		<% else%>
+			<%= link_to('Sign In', new_user_session_path, class:"btn btn-default btn-xs")%> <br>
+		<%end%>
+  <%= link_to 'Members List', users_path, class:"btn btn-default btn-xs" %><br />
+  <%= link_to 'Projects', projects_path, class:"btn btn-default btn-xs" %><br />
+  <%= link_to 'Store', products_path, class:"btn btn-default btn-xs" %><br />
+  </div>
+  
+  <div id="main" >
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
   <%= yield %>
   </div>
  </div>

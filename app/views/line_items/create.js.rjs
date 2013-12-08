@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+page.select("#notice" ).each { |notice| notice.hide }
+
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 page.replace_html('cart' , render(@cart))
 
 page[:cart].visual_effect :blind_down if @cart.total_items == 1
