@@ -3,20 +3,12 @@
 <head>
   <title>Store</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> clam4-master
+
   <%= stylesheet_link_tag    "bootstrap", media: "all", "data-turbolinks-track" => true %>
 
   <%= javascript_include_tag :defaults %>
     <%= javascript_include_tag "application" %>
-<<<<<<< HEAD
-=======
-=======
-  <%= javascript_include_tag :defaults %>
->>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
->>>>>>> clam4-master
+
 
   <%= csrf_meta_tags %>
 </head>
@@ -28,7 +20,6 @@
   </div>
   <div id="columns" >
   <div id="side" >
-<<<<<<< HEAD
     <div id="cart" >
       <% if @cart %>
         <%= hidden_div_if(@cart.line_items.empty?, :id => "cart" ) do %>
@@ -47,8 +38,7 @@
   <%= link_to 'Projects', projects_path, class:"btn btn-default btn-sm" %><br />
   <%= link_to 'Store', products_path, class:"btn btn-default btn-sm" %><br />
 
-<<<<<<< HEAD
-=======
+
   </div>
   <div id="main" >
   	<p> <% if user_signed_in?%>
@@ -58,7 +48,6 @@
 
   			<%= link_to('Sign In', new_user_session_path, class:"btn btn-default btn-xs")%>
   		<%end%>
-=======
 
   <%= link_to 'New User', new_user_path, class:"btn btn-default btn-xs" %><br />
 
@@ -71,11 +60,9 @@
   <%= link_to 'Members List', users_path, class:"btn btn-default btn-xs" %><br />
   <%= link_to 'Projects', projects_path, class:"btn btn-default btn-xs" %><br />
   <%= link_to 'Store', products_path, class:"btn btn-default btn-xs" %><br />
->>>>>>> clam4-master
   </div>
   
   <div id="main" >
-<<<<<<< HEAD
   	<p> <% if user_signed_in?%>
   			<%= 'Welcome, ' %>	<%= link_to( current_user.first_name + ' ' + current_user.last_name, user_path(current_user.id), class:"btn btn-default btn-xs")%>      |      <%= link_to('Sign Out', destroy_user_session_path, method: :delete, class:"btn btn-default btn-xs")%>
 
@@ -83,9 +70,7 @@
 
   			<%= link_to('Sign In', new_user_session_path, class:"btn btn-default btn-xs")%>
   		<%end%>
-=======
->>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
->>>>>>> clam4-master
+	</p>
   <%= yield %>
   </div>
  </div>
