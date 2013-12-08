@@ -1405,7 +1405,7 @@ th {
 }
 
 .table {
-  width: 100%;
+  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -1436,11 +1436,12 @@ th {
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #111111;
+  
 }
 
 .table .table {
-  background-color: #ffffff;
+  background-color: #333333;
 }
 
 .table-condensed thead > tr > th,
@@ -1453,7 +1454,7 @@ th {
 }
 
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #111111;
 }
 
 .table-bordered > thead > tr > th,
@@ -1462,7 +1463,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 1px solid #111111;
 }
 
 .table-bordered > thead > tr > th,
@@ -2044,6 +2045,7 @@ fieldset[disabled] .btn {
   color: #66cc66;
   background-color: #333333;
   border-color: #000000;
+  margin:2px;
 }
 
 .btn-default:hover,
@@ -3635,7 +3637,7 @@ input[type="button"].btn-block {
 }
 
 .input-group .form-control {
-  width: 100%;
+  width: 300px;
   margin-bottom: 0;
 }
 

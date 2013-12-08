@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
 
   has_many :ratings
   has_many :comments
+  has_many :projects
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
