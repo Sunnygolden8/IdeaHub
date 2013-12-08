@@ -1,20 +1,20 @@
 #banner {
-background: #9c9;
+background: #FF3300;
 padding-top: 10px;
 padding-bottom: 10px;
-border-bottom: 2px solid;
-font: small-caps 40px/40px "Times New Roman" , serif;
-color: #282;
+border-bottom: 4px solid;
+font: small-caps 40px/40px "Times New Roman" , serif, bold;
+color: ##FF6600;
 text-align: center;
 }
 #banner img {
 float: left;
 }
 #columns {
-background: #141;
+background: #FF6600;
 }
 #main {
-margin-left: 17em;
+margin-left: 19em;
 padding-top: 4ex;
 padding-left: 2em;
 background: white;
@@ -25,10 +25,11 @@ padding-top: 1em;
 padding-left: 1em;
 padding-bottom: 1em;
 width: 6em;
-background: #141;
+height: 100%;
+background: #FF6600;
 }
 #side a {
-color: #bfb;
+color: #FF6600;
 font-size: small;
 }
 #store .entry form, #store .entry form div {
@@ -46,11 +47,37 @@ border-top: 1px solid #595;
 }
 /* Styles for the cart in the sidebar */
 #cart, #cart table {
-font-size: smaller;
-color: white;
+font-size: medium;
+color: black;
 }
 #cart table {
 border-top: 1px dotted #595;
 border-bottom: 1px dotted #595;
 margin-bottom: 10px;
+}
+.depot_form fieldset {
+background: #efe;
+}
+.depot_form legend {
+color: #dfd;
+background: #141;
+font-family: sans-serif;
+padding: 0.2em 1em;
+}
+.depot_form label {
+width: 5em;
+float: left;
+text-align: right;
+padding-top: 0.2em;
+margin-right: 0.1em;
+display: block;
+}
+.depot_form select, .depot_form textarea, .depot_form input {
+margin-left: 0.5em;
+}
+.depot_form .submit {
+margin-left: 4em;
+}
+.depot_form div {
+margin: 0.5em 0;
 }

@@ -1,4 +1,4 @@
-
+<div class="depot_form" >
 <%= form_for (@user) do |f| %>
   <% if @user.errors.any? %>
   <div id="errorExplanation">
@@ -12,6 +12,8 @@
   </div>
   <% end %>
 
+<fieldset>
+<legend>Enter User Details</legend>
 <div class="form-group">
   <p>
     <%= f.label :first_name %><br>
@@ -34,7 +36,9 @@
   </p>
   
   <p>
-    <button type="submit" class="btn"><%= f.submit "Save" %></button>
+    <%= f.submit "Save", class:"btn btn-default"%>
   </p>
 </div>
+</fieldset>
 <% end %>
+</div>

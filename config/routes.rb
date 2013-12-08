@@ -1,16 +1,32 @@
 Store::Application.routes.draw do
+
+  resources :orders
+
+  get "rating/update"
+
   devise_for :users
   resources :line_items
   resources :store
   resources :carts
 
   get "store/index"
-  resources :products
-  
+  resources :products do
+    get :who_bought, :on => :member
+  end
+
   resources :users 
+  resources :point_rules
+  resources :comments
+  resources :ratings, only: :update
   
   #root :to => 'store#index' , :as => 'store'
-  root 'users#index'
+  #root 'users#index'
+
+  resources :projects
+  
+  #root :to => 'store#index' , :as => 'store'
+  root 'welcome#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

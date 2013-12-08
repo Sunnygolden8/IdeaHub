@@ -20,4 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  merit:
+    flashs:
+      point_granted: "Congratulations! You've just earned '%{point}' points."
+
+

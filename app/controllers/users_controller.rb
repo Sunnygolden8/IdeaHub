@@ -21,7 +21,7 @@ class UsersController < ApplicationController
  
  #link to show.html 
   def show
-     @user = User.find(params[:id])
+     @user = User.find( params[:id] )
   end
   
   def edit
@@ -35,6 +35,17 @@ class UsersController < ApplicationController
     else
       render 'edit'
     end
+    if params[:spendamt]
+      respond_to do |format|
+        if @user.spend(params[:spendamt].to_i)
+          format.html { redirect_to @user, notice: 'You have spent #{params[:spendamt]} points.' }
+          format.json { head :no_content }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @user.errors, status: :unprocessable_entity }
+        end
+      end
+
   end
   
   def index
