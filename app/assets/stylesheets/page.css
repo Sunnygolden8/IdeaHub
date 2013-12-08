@@ -1,5 +1,6 @@
 #banner {
-background: #9c9;
+	float:top;
+background: #333333;
 padding-top: 10px;
 padding-bottom: 10px;
 border-bottom: 2px solid;
@@ -8,29 +9,25 @@ color: #282;
 text-align: center;
 }
 #banner img {
-float: left;
+float: top;
+width:40px;
 }
 #columns {
-background: #141;
 }
 #main {
-margin-left: 17em;
+margin-left: 180px;
 padding-top: 4ex;
 padding-left: 2em;
-background: white;
 }
 #side {
 float: left;
 padding-top: 1em;
-padding-left: 1em;
+padding-left: 2em;
 padding-bottom: 1em;
-width: 6em;
-background: #141;
+width: 150px;
+bottom:0px;
 }
-#side a {
-color: #bfb;
-font-size: small;
-}
+
 #store .entry form, #store .entry form div {
 display: inline;
 }

@@ -24,6 +24,7 @@ def destroy
       format.html { 
         redirect_to project_path(@project)
       }
+    end
 end
 
 end

@@ -12,13 +12,16 @@ Store::Application.routes.draw do
 
   resources :users 
 
-  resources :comments
-  resources :ratings, only: :update
   
+  resources :ratings, only: :update
+  resources :projects do
+     resources :comments
+     resources :project_roles
+   end
+
   #root :to => 'store#index' , :as => 'store'
   #root 'users#index'
 
-  resources :projects
   
   #root :to => 'store#index' , :as => 'store'
   root 'welcome#index'
