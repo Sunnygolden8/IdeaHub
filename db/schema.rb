@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -112,6 +113,8 @@ end
 =======
 =======
 >>>>>>> upstream/master
+=======
+>>>>>>> 6a84ab86001a53f2fea204806286622138652315
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
@@ -125,6 +128,7 @@ end
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20131208061834) do
 
   create_table "badges_sashes", force: true do |t|
@@ -137,6 +141,9 @@ ActiveRecord::Schema.define(version: 20131208061834) do
   add_index "badges_sashes", ["badge_id", "sash_id"], name: "index_badges_sashes_on_badge_id_and_sash_id"
   add_index "badges_sashes", ["badge_id"], name: "index_badges_sashes_on_badge_id"
   add_index "badges_sashes", ["sash_id"], name: "index_badges_sashes_on_sash_id"
+=======
+ActiveRecord::Schema.define(version: 20131206050605) do
+>>>>>>> 6a84ab86001a53f2fea204806286622138652315
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -162,6 +169,7 @@ ActiveRecord::Schema.define(version: 20131208061834) do
     t.integer  "quantity",   default: 1
   end
 
+<<<<<<< HEAD
   create_table "merit_actions", force: true do |t|
     t.integer  "user_id"
     t.string   "action_method"
@@ -200,6 +208,8 @@ ActiveRecord::Schema.define(version: 20131208061834) do
     t.datetime "updated_at"
   end
 
+=======
+>>>>>>> 6a84ab86001a53f2fea204806286622138652315
   create_table "products", force: true do |t|
     t.string   "title"
     t.text     "description"
@@ -235,11 +245,14 @@ ActiveRecord::Schema.define(version: 20131208061834) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "sashes", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+=======
+>>>>>>> 6a84ab86001a53f2fea204806286622138652315
   create_table "users", force: true do |t|
     t.string   "email"
     t.string   "password"
@@ -256,6 +269,7 @@ ActiveRecord::Schema.define(version: 20131208061834) do
     t.string   "last_sign_in_ip"
     t.string   "first_name"
     t.string   "last_name"
+<<<<<<< HEAD
     t.integer  "sash_id"
     t.integer  "level",                  default: 0
 <<<<<<< HEAD
@@ -263,6 +277,8 @@ ActiveRecord::Schema.define(version: 20131208061834) do
 =======
     t.integer  "rewardPoints",           default: 0
 >>>>>>> upstream/master
+=======
+>>>>>>> 6a84ab86001a53f2fea204806286622138652315
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
@@ -270,7 +286,10 @@ ActiveRecord::Schema.define(version: 20131208061834) do
 
 end
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 >>>>>>> clam4-master
 >>>>>>> upstream/master
+=======
+>>>>>>> 6a84ab86001a53f2fea204806286622138652315

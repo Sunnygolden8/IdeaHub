@@ -3,7 +3,7 @@ before_action :authenticate_user!
 
 def create
 	@project = Project.find(params[:project_id])
-    @comment = @project.comments.create(params[:comment].permit(:commenter, :body))
+    @comment = @project.comments.create(params[:comment].permit(:commenter, :text))
     @comment.user = current_user
     @comment.save
     

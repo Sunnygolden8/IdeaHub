@@ -1,4 +1,5 @@
 class RatingController < ApplicationController
+  
   def update
 	@rating = Rating.find(params[:id})
 	@project = @rating.project
