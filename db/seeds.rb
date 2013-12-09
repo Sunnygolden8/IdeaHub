@@ -52,3 +52,4 @@ Product.create(:title => 'Love Sweets?',
   :image => 'Cake.png',
   :price => 43.75)
 
+require "#{Rails.root}/db/gioco/db.rb"

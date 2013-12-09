@@ -24,8 +24,6 @@ class UsersController < ApplicationController
  
  #link to show.html 
   def show
-
-
      @user = User.find( params[:id] )
   end
   
@@ -36,7 +34,8 @@ class UsersController < ApplicationController
   def update
     @user = User.find( params[:id] )
     if @user.update_attributes( user_params )
-      redirect_to @user
+      @user.update_attribute(:rewards, @user.rewards + 1)
+      redirect_to @user, notice: 'Points given for updating.'
     else
       render 'edit'
     end
@@ -65,6 +64,10 @@ class UsersController < ApplicationController
     redirect_to users_path 
   end
   
+  def reward
+    @user = User.find( params[:id] )
+    @user.change_points(2)
+  end
    
 private
     def user_params

@@ -25,7 +25,10 @@ Store::Application.routes.draw do
     get :who_bought, :on => :member
   end
 
-  resources :users 
+  resources :users do
+     resources :rewards
+   end
+  
   resources :point_rules
   resources :comments
 

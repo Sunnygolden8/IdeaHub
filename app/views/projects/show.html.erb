@@ -1,8 +1,5 @@
 <h1><%= @project.title%></h1>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> clam4-master
+
 <table class="table table-bordered">
 	<tr><th colspan="2"><%= link_to( @project.user.first_name + ' ' + @project.user.last_name, user_path(current_user.id), class:"btn btn-default btn-xs")%></th><tr>
 		<tr><td>Timeframe: <%= @project.time_frame%></td><td>Status: <%= @project.status%></td></tr>
@@ -23,11 +20,6 @@
 	<div id="comments-form">
 		<%= render "comments/form" %>
 	</div>
-<<<<<<< HEAD
 <% end %>
-=======
-<% end %>
-=======
+
 <%= @project.user.first_name%> <%= @project.user.last_name%>
->>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
->>>>>>> clam4-master

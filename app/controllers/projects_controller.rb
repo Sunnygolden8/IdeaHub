@@ -8,9 +8,13 @@ class ProjectsController < ApplicationController
     @project = Project.new(params[:project].permit(:title, :description, :time_frame))
     @project.user_id = current_user.id
     @project.status = "In Progress"
+    
+    @project.user = current_user
  
     if @project.save
-      redirect_to @project
+      @project.user.update_attribute(:rewards, @project.user.rewards)
+      #@project.user.incrementing
+      redirect_to @project, notice: "You got points for creating a project!"
     else
       render 'new'
     end 
