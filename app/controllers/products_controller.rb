@@ -60,11 +60,6 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> upstream/master
   
   def who_bought
     @product = Product.find(params[:id])
@@ -73,10 +68,7 @@ class ProductsController < ApplicationController
       format.xml { render :xml => @product }
     end
   end
-<<<<<<< HEAD
-=======
->>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
->>>>>>> upstream/master
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
