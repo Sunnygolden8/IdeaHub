@@ -1,8 +1,11 @@
+
+
 class UsersController < ApplicationController
   def new
       @user = User.new
       @users = User.all
   end
+
 
   def create
     #by adding permit, we allow title and text to be seen through the security feature.
@@ -21,6 +24,7 @@ class UsersController < ApplicationController
  
  #link to show.html 
   def show
+
 
      @user = User.find( params[:id] )
   end
@@ -47,6 +51,7 @@ class UsersController < ApplicationController
         end
       end
   end
+  end
   
   def index
      @users = User.all
@@ -55,6 +60,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
+
 
     redirect_to users_path 
   end
