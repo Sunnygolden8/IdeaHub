@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 
-=======
 <div class="depot_form" >
->>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+
 <%= form_for (@user) do |f| %>
   <% if @user.errors.any? %>
   <div id="errorExplanation">
@@ -16,11 +14,8 @@
   </div>
   <% end %>
 
-<<<<<<< HEAD
-=======
 <fieldset>
 <legend>Enter User Details</legend>
->>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
 <div class="form-group">
   <p>
     <%= f.label :first_name %><br>
@@ -42,22 +37,9 @@
     <%= f.text_field :password %>
   </p>
   
-<<<<<<< HEAD
-  <p>
-<<<<<<< HEAD
-    <button type="submit" class="btn"><%= f.submit "Save" %></button>
-=======
-    <%= f.submit "Save", class:"btn btn-default"%>
->>>>>>> 2b82886ffcab7efaddea81b2a55bbd283f5ae00c
-  </p>
-</div>
-<% end %>
-=======
   <p>
     <%= f.submit "Save", class:"btn btn-default"%>
   </p>
 </div>
-</fieldset>
 <% end %>
-</div>
->>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+
