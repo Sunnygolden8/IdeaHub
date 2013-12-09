@@ -27,9 +27,5 @@ class User < ActiveRecord::Base
     self.rewardPoints = cur_rewardPoints - amt
     self.save
   end
-  
-<<<<<<< HEAD
+
 end
-=======
-end
->>>>>>> upstream/master
