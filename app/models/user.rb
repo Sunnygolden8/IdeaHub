@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   has_many :comments
 
   has_many :projects
-
+  has_many :members
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
