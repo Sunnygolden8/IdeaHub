@@ -6,11 +6,9 @@
 		<table class="table">
 			<tr><td>
 			<%= 'Hello, ' %>	<%= link_to( current_user.first_name + ' ' + current_user.last_name, user_path(current_user.id), class:"btn btn-default btn-xs")%>
-<<<<<<< HEAD
+
 			<td><%= 'Your Current Points: ' %><span class="badge badge-success"><%= link_to( current_user.rewards, products_path) %></span> </td> </td><td><%= link_to('Sign Out', destroy_user_session_path, method: :delete, class:"btn btn-default btn-xs")%></td></tr></table>
-=======
-			<td><%= 'Your Current Points: ' %><span class="badge badge-success"><%= link_to( current_user.points, products_path) %></span> </td> </td><td><%= link_to('Sign Out', destroy_user_session_path, method: :delete, class:"btn btn-default btn-xs")%></td></tr></table>
->>>>>>> 90ea4bd53af37c81194ed97119465a53de047f9e
+
 				
 		<% else%>
 		<table class="table"><tr><td>
