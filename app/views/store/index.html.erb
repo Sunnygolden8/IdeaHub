@@ -1,0 +1,37 @@
+<% if notice %>
+<p id="notice" ><%= notice %></p>
+<% end %>
+
+<<<<<<< HEAD
+<h1>Avatar Catalog</h1>
+<% @products.each do |product| %>
+
+<div class="entry" >
+<%= image_tag(product.image) %>
+=======
+<h1>Avatar Store</h1>
+<% @products.each do |product| %>
+  <div class="list_items">
+      <div class="prod_image">
+        <%= image_tag(product.image) %>
+      </div>
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+
+<h3><%= product.title %></h3>
+<%=sanitize product.description %>
+
+<div class="price_line" >
+  <span class="price" ><%= number_to_currency(product.price) %></span>
+<<<<<<< HEAD
+  <%= button_to 'Add to Cart', line_items_path(:product_id => product),:remote => true %>
+</div>
+
+</div>
+=======
+  <%= button_to 'Add to Cart', line_items_path(:product_id => product), class: "button-style", :remote => true %>
+</div>
+
+</div>
+</div>
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+<% end %>

@@ -1,0 +1,10 @@
+<%= form_for( [@project, @project.comments.build], html: { role: 'form' }, remote: true ) do |f| %>
+
+	<div class="input-group">
+    	<%= f.text_area :text, class: 'form-control' %>
+	</div>
+	<div class="input-group">
+    	<%= f.submit class: 'btn-default btn-xs' %>
+	</div>
+	
+<% end %>

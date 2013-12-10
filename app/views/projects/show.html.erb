@@ -1,0 +1,43 @@
+<h1><%= @project.title%></h1>
+
+<table class="table table-bordered">
+	<tr><th colspan="2"><%= link_to( @project.user.first_name + ' ' + @project.user.last_name, user_path(@project.user.id), class:"btn btn-default btn-xs")%></th><tr>
+		<tr><td>Timeframe: <%= @project.time_frame%></td><td>Status: <%= @project.status%></td></tr>
+<tr><td  colspan="2">	<%= @project.description%></td></tr>
+</table>
+<h3>Members</h3>
+<p><% if @project.members.exists?(:user_id => current_user.id) %>
+	<%= link_to 'Leave Project', {action: 'remove_member'}, data: { confirm: 'Are you sure?' }, class:"btn btn-danger btn-xs"%>
+<%else%>
+	<%=link_to 'Join Project', {action: 'add_member'}, method: :post, class:"btn btn-info btn-xs"%>
+<%end%>
+</p>
+<%= link_to (@project.user.first_name + " "+ @project.user.last_name), user_path(@project.user.id), class:"btn btn-default btn-xs" %>
+<% @project.members.each do |member|%>
+
+<%= link_to member.name, user_path(member.user_id), class: "btn btn-default btn-xs"%>
+<%end%>
+<hr>
+<h3>Comments</h3>
+
+<div id="comments-list">
+<table class="table table-bordered">
+		<tr><td><%= render @project.comments %></td></tr>
+</table>
+</div>
+
+<% if user_signed_in? %>
+	<h3>Add a comment:</h3>
+	<div id="comments-form">
+		<%= render "comments/form" %>
+	</div>
+<% end %>
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<%= @project.user.first_name%> <%= @project.user.last_name%>
+=======
+>>>>>>> 4a945740582b26a5d0ead360b7f8947c31aa1f51
+=======
+<%= @project.user.first_name%> <%= @project.user.last_name%>
+>>>>>>> 90ea4bd53af37c81194ed97119465a53de047f9e

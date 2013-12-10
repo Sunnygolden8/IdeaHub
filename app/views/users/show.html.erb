@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+<h2>All Users</h2>
+<table>
+  <% if @user.nil? %>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= link_to 'Show', user_path(user) %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Delete', user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>    
+    <% end %>
+  <% end %>
+</table>
+=======
+<%= @user.first_name%> <%= @user.last_name%>
+>>>>>>> 4a945740582b26a5d0ead360b7f8947c31aa1f51
+
+<%= link_to 'Edit User', edit_user_path(@user) %> |
+
+
+
