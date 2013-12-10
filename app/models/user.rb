@@ -63,7 +63,11 @@ end
     #self.points = cur_points + opt
     #self.save
      #self.increment!(self[:points])
+<<<<<<< HEAD
      self.increment!:rewards
+=======
+     self.increment!(:rewards)
+>>>>>>> 90ea4bd53af37c81194ed97119465a53de047f9e
   end
   
   def total_points 

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 90ea4bd53af37c81194ed97119465a53de047f9e
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
@@ -185,6 +188,7 @@ ActiveRecord::Schema.define(version: 20131209050901) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
+<<<<<<< HEAD
 =======
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
@@ -356,3 +360,5 @@ ActiveRecord::Schema.define(version: 20131210033024) do
 
 end
 >>>>>>> 4a945740582b26a5d0ead360b7f8947c31aa1f51
+=======
+>>>>>>> 90ea4bd53af37c81194ed97119465a53de047f9e
