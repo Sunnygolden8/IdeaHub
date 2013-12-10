@@ -1,25 +1,19 @@
 <div class="container">
 	<p></p>
-
-	<p><%= link_to( 'Home',root_path, class:"btn btn-default btn-xs")%></p>
-	<p> <% if user_signed_in?%>
-		<table class="table">
-			<tr><td>
-			<%= 'Hello, ' %>	<%= link_to( current_user.first_name + ' ' + current_user.last_name, user_path(current_user.id), class:"btn btn-default btn-xs")%>
-
-			<td><%= 'Your Current Points: ' %><span class="badge badge-success"><%= link_to( current_user.points, products_path) %></span> </td> </td><td><%= link_to('Sign Out', destroy_user_session_path, method: :delete, class:"btn btn-default btn-xs")%></td></tr></table>
-
-				
-		<% else%>
-		<table class="table"><tr><td>
-			<%= link_to('Sign In', new_user_session_path, class:"btn btn-default btn-xs")%>
-		</td></tr></table>
-	<%end%>
-	</p>
 	<p>
 		<h1>WELCOME</h1>
 		<table class="table">
-			<tr><th>Your Projects</th><th>Recent Projects</th></tr>
-			<tr><td>Current Projects</td><td>Last 5 Projects</td></tr>
+			<tr><th>Your Projects</th></tr>
+				<% if user_signed_in? %>
+					<% current_user.projects.each do |project|%>
+					<tr><td><%= project.title%></td><td>Owner</td></tr>
+					<%end%>
+
+					<% current_user.members.each do |member|%>
+					<td><%= member.title %></td><td>Member</td>
+				<%end%>
+				<%else%>
+			<tr><td>Please sign in to view projects</td></tr>
+			<%end%>
 		</table>
 	</div>
