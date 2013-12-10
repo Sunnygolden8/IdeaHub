@@ -14,14 +14,7 @@ before_action :authenticate_user!, :only => [:new, :create, :edit, :update, :des
 
     if @project.save
       @project.user.update_attribute("rewards", @project.user.rewards + 1)
-=======
-    
-    @project.user = current_user
- 
-    if @project.save
-      @project.user.update_attribute(:rewards, @project.user.rewards)
->>>>>>> 90ea4bd53af37c81194ed97119465a53de047f9e
-      #@project.user.incrementing
+
       redirect_to @project, notice: "You got points for creating a project!"
     else
       render 'new'
