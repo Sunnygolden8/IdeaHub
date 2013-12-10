@@ -1,18 +1,18 @@
 class ProjectsController < ApplicationController
 
+before_action :authenticate_user!, :only => [:new, :create, :edit, :update, :destroy]
+
   def new
     @project = Project.new
   end
   
   def create
     @project = Project.new(params[:project].permit(:title, :description, :time_frame))
-    @project.user_id = current_user.id
-    @project.status = "In Progress"
-    
     @project.user = current_user
- 
+    @project.status = "In Progress"
+
     if @project.save
-      @project.user.update_attribute(:rewards, @project.user.rewards)
+      @project.user.update_attribute("rewards", @project.user.rewards + 1)
       #@project.user.incrementing
       redirect_to @project, notice: "You got points for creating a project!"
     else

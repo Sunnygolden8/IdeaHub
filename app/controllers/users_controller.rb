@@ -15,6 +15,7 @@ class UsersController < ApplicationController
     @user = User.new(params.require(:user).permit(:first_name, :last_name, :email, :password))
                      
     if @user.save
+      @user.update_attribute(:rewards, @user.rewards + 1)
       flash[:success] = "Welcome!"
       redirect_to root_url, notice: 'User was successfully created.'
     else
