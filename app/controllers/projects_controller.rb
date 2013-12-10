@@ -51,6 +51,22 @@ before_action :authenticate_user!, :only => [:new, :create, :edit, :update, :des
      end
    end
    
+   def add_member
+     @project = Project.find(params[:id])
+     @user = User.find(current_user)
+        Member.create({project_id: @project.id, user_id: @user.id, name: (@user.first_name + " "+@user.last_name)})
+    redirect_to @project
+    end
+   
+    def remove_member
+      @project = Project.find(params[:id])
+      @user = User.find(current_user)
+      @member = Member.where(:user_id => @user.id).first
+      @project.members.delete(@member)
+
+       redirect_to @project
+     end
+   
    #def average_rating
 	#ratings.sum(:rating_score)/ratings.size
    #end

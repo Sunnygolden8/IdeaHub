@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2>All Users</h2>
 <table>
   <% if @user.nil? %>
@@ -12,6 +13,9 @@
     <% end %>
   <% end %>
 </table>
+=======
+<%= @user.first_name%> <%= @user.last_name%>
+>>>>>>> 4a945740582b26a5d0ead360b7f8947c31aa1f51
 
 <%= link_to 'Edit User', edit_user_path(@user) %> |
 
