@@ -33,5 +33,4 @@ Store::Application.routes.draw do
   #root 'users#index'
 
   root 'welcome#index'
-
 end
