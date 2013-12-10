@@ -1,6 +1,5 @@
 #banner {
-float:top;
-background: #333333;
+background: #9c9;
 padding-top: 10px;
 padding-bottom: 10px;
 border-bottom: 2px solid;
@@ -9,39 +8,13 @@ color: #282;
 text-align: center;
 }
 #banner img {
-float: top;
-width:40px;
-
-}
-#columns {
-}
-#main {
-margin-left: 180px;
-padding-top: 4ex;
-padding-left: 2em;
-}
-#columns {
-}
-#main {
-margin-left: 180px;
-padding-top: 4ex;
-padding-left: 2em;
-background: #FF3300;
-padding-top: 10px;
-padding-bottom: 10px;
-border-bottom: 4px solid;
-font: small-caps 40px/40px "Times New Roman" , serif, bold;
-color: ##FF6600;
-text-align: center;
-}
-#banner img {
 float: left;
 }
 #columns {
-background: #FF6600;
+background: #141;
 }
 #main {
-margin-left: 19em;
+margin-left: 17em;
 padding-top: 4ex;
 padding-left: 2em;
 background: white;
@@ -49,28 +22,15 @@ background: white;
 #side {
 float: left;
 padding-top: 1em;
-padding-left: 2em;
-padding-bottom: 1em;
-width: 150px;
-bottom:0px;
-}
-
-padding-left: 2em;
-padding-bottom: 1em;
-width: 150px;
-bottom:0px;
-}
 padding-left: 1em;
 padding-bottom: 1em;
 width: 6em;
-height: 100%;
-background: #FF6600;
+background: #141;
 }
 #side a {
-color: #FF6600;
+color: #bfb;
 font-size: small;
 }
-
 #store .entry form, #store .entry form div {
 display: inline;
 }
@@ -88,14 +48,11 @@ border-top: 1px solid #595;
 #cart, #cart table {
 font-size: smaller;
 color: white;
-font-size: medium;
-color: black;
 }
 #cart table {
 border-top: 1px dotted #595;
 border-bottom: 1px dotted #595;
 margin-bottom: 10px;
-
 }
 .depot_form fieldset {
 background: #efe;
