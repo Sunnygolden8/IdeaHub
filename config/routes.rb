@@ -15,7 +15,10 @@ Store::Application.routes.draw do
   resources :ratings, only: :update
   resources :projects do
      resources :comments
-     resources :project_roles
+     member do
+       post 'add_member'
+       get 'remove_member'
+     end
    end
 
   #root :to => 'store#index' , :as => 'store'
