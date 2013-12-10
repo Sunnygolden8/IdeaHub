@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+<<<<<<< HEAD
+  product_id: 1
+  cart_id: 1
+
+two:
+  product_id: 1
+  cart_id: 1
+=======
+  product: ruby
+  order: one
+
+two:
+  product: ruby
+  cart: one
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f

@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+<div class="container"><%= link_to "New Project", new_project_path, class:"btn btn-default " %>
+=======
+<<<<<<< HEAD
+<div class="container"><%= link_to "New Project", new_project_path, class:"btn btn-default " %>
+=======
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
+<h1>Projects</h1>
+
+<table class="table">
+  <tr>
+    <th>Title</th>
+<<<<<<< HEAD
+	<th>Owner</th>
+=======
+<<<<<<< HEAD
+	<th>Owner</th>
+=======
+	<th></th>
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
+    <th>Status</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <tr>
+<<<<<<< HEAD
+    <td><%= link_to project.title, project_path(project), class:"btn btn-default " %></td>
+    <td><%= project.user.first_name %> <%= project.user.last_name%></td>
+=======
+<<<<<<< HEAD
+    <td><%= link_to project.title, project_path(project), class:"btn btn-default " %></td>
+    <td><%= project.user.first_name %> <%= project.user.last_name%></td>
+=======
+    <td><%= project.title %></td>
+    <td><%= project.user %></td>
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
+    <td><%= project.status %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+<<<<<<< HEAD
+</div>
+=======
+<<<<<<< HEAD
+</div>
+=======
+
+<%= link_to( 'Sign in', new_user_session_path ) %>
+>>>>>>> 33d82b381f4ba8f0bb6d65c84c2c6661e3bd943f
+>>>>>>> clam4-master
