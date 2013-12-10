@@ -11,6 +11,25 @@
       </tr>    
     <% end %>
   <% end %>
+  
+  <% for (var i; i<=@user.projects.size ;i++)%>
+	<% @user.projects.each do |project|%>
+		<tr>
+			<td><%= project.title %></td>
+			<td><%= project.description%></td>
+		</tr>
+	<%end%>
+  <%end%>
+  
+  <%for (var i; i<=@user.members.size ;i++ ) %>
+		<% @user.members.each do |member|%>
+			<tr>
+				<td><%= member.title%></td>
+				<td><%= member.description%></td>
+			</tr>
+		<%end%>
+  <%end%>
+  
 </table>
 
 <%= link_to 'Edit User', edit_user_path(@user) %> |
