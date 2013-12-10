@@ -54,7 +54,7 @@ before_action :authenticate_user!, :only => [:new, :create, :edit, :update, :des
    def add_member
      @project = Project.find(params[:id])
      @user = User.find(current_user)
-        Member.create({project_id: @project.id, user_id: @user.id, name: (@user.first_name + " "+@user.last_name)})
+        Member.create({project_id: @project.id, user_id: @user.id, name: (@user.first_name + " "+@user.last_name), title: @project.title})
     redirect_to @project
     end
    
